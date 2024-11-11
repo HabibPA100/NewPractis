@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Pay now !</title>
+    <style>
+        body{
+            background-image: url(img/pay_bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .paymentIconsize {
+            width:50px;
+            height: 50px;
+        }
+        #selectPayMethod{
+            margin: 0 auto;
+            width: 50%;
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+        <div class="container" style=" margin: 0 auto; width: auto; height: auto; font-family: kalpurush;">
+            <h1 class="text-center text-primary">Select Your Payment method !</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center h-100">
+                        <h3 class="my-2">পেমেন্টের ধরন নির্বাচন করুন</h3>
+                        <select name="selectPayMethod" id="selectPayMethod" class="fs-5">
+                        <option value="">মাসিক বেতন
+                        </option>
+                        <option value=""> পরীক্ষার ফি </option>
+                        <option value="">ভর্তি ফি </option>
+                        <option value="">জাকাতের টাকা </option>
+                        <option value="">সাধারণ দান </option>
+                    </select>
+                        <div class="card-body">
+                            <img src="img/bkash.png" class="rounded-circle mx-auto d-block paymentIconsize" alt="...">
+                        <h6 class="card-title">বিকাশের মাদ্ধমে টাকা পাঠাতে নিচের নাম্বার কপি করুন</h6>
+                        <p class="card-text">01921179455</p>
+                        <img src="img/nagad.png" class="rounded-circle mx-auto d-block paymentIconsize" alt="...">
+                        <h6 class="card-title">বিকাশের মাদ্ধমে টাকা পাঠাতে নিচের নাম্বার কপি করুন</h6>
+                        <p class="card-text">01921179455</p>
+                        <img id="upay" src="img/upay.png" class="rounded-circle mx-auto d-block paymentIconsize" alt="...">
+                        <h6 class="card-title">বিকাশের মাদ্ধমে টাকা পাঠাতে নিচের নাম্বার কপি করুন</h6>
+                        <p class="card-text">01921179455</p>
+                        <img id="rocket" src="img/rocket.png" class="rounded-circle mx-auto d-block paymentIconsize" alt="...">
+                        <h6 class="card-title">বিকাশের মাদ্ধমে টাকা পাঠাতে নিচের নাম্বার কপি করুন</h6>
+                        <p class="card-text">01921179455</p>
+                        <img id="bank" src="img/islamibank.png" class="rounded-circle mx-auto d-block paymentIconsize" alt="...">
+                        <h6 class="card-title">বিকাশের মাদ্ধমে টাকা পাঠাতে নিচের নাম্বার কপি করুন</h6>
+                        <p class="card-text">01921179455</p>
+    
+                        <span>পেমেন্টের স্ক্রিনশর্ট জমা দিন  :  <input type="file" name="paymentscreenshort" ></span>
+                        <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

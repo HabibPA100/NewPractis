@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitting</title>
+    <style>
+        div{
+            margin-bottom: 1rem;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 1px solid rgb(243, 8, 8);
+        }
+        .butt{
+            width: 80px; height: 50px; background-color: rgb(212, 126, 13); color: rgb(226, 19, 19);font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div>
+                <label for="name"> Enter Your Name Please : 
+                    <input type="text" name="name" id="name" minlength="3" maxlength="20" autofocus required/>
+                </label>
+            </div>
+            <div>
+                <label for="email">Enter Your Email Please : 
+                    <input type="email" name="email" id="email" minlength="12" maxlength="20" autofocus required/>
+                </label>
+            </div>
+            <div>
+                <label for="phone"> Enter Your Phone Number Please : 
+                    <input type="phone" name="phone" id="phone" minlength="10" maxlength="15" autofocus required/>
+                </label>
+            </div>
+            <div>
+                <label for="password">Enter Your Password Please : 
+                    <input type="password" name="password" id="password" minlength="4" maxlength="8" autofocus required/>
+                </label>
+            </div>
+            
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+<button>helo</button>
+        <h2></h2>
+    <script>
+        var form = document.querySelector("form");
+        var Name = form.querySelector("div #name");
+        var Email = form.querySelector("div #email");
+        var Phone = form.querySelector("div #phone");
+        var Password = form.querySelector("div #password");
+        form.addEventListener("submit", function (e){
+            e.preventDefault();
+            if(Name <3 ){
+               alert("Name must be 3 character of length")
+            }
+            var objectInfo = {
+            name : Name.value,
+            email : Email.value,
+            Phone: Phone.value,
+            pas: Password.value,
+        };
+            // var uName = Name.value;
+            // var uEmail = Email.value;
+            // var uPhone = Phone.value;
+            // var uPassword = Password.value;
+            // var allDisplayInfo = uName+'<br>'+uEmail+'<br>'+uPhone+'<br>'+uPassword;
+            // var info = document.querySelector("h2");
+            // info.innerHTML = objectInfo[name];
+            console.log(objectInfo);
+            Name.value=''; 
+            Email.value='';
+            Phone.value='';
+            Password.value='';
+        });
+        var btn = document.querySelectorAll("button")[1];
+        btn.classList.add('butt');
+    </script>
+</body>
+</html>
